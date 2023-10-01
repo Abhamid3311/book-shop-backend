@@ -131,7 +131,7 @@ const run = async () => {
         );
 
         if (result) {
-          res.json(result.reviews); // Send the reviews array
+          res.json(result.reviews.reverse()); // Send the reviews array
         } else {
           res.status(404).json({ error: 'Product not found' });
         }
